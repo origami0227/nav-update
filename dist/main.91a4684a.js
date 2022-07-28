@@ -108,6 +108,7 @@ var $siteList = $(".siteList");
 var $lastLi = $siteList.find("li.last");
 var x = localStorage.getItem("x");
 var xObject = JSON.parse(x); //转化为对象
+var $input = $(".input");
 
 //声明hashMap并设置保底为后面读取localStorage的hashMap做准备
 var hashMap = xObject || [{ logo: "Z", url: "https://zhihu.com" }, {
@@ -166,5 +167,9 @@ $(document).on("keypress", function (e) {
     }
   }
 });
+$input.on("keypress", function (e) {
+  console.log("运行"); //键盘事件在输入框中输入也会导致跳转，所以需要加入一个阻止冒泡的操作
+  e.stopPropagation();
+});
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.98db58f6.map
+//# sourceMappingURL=main.91a4684a.map
