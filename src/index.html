@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <title>前航——前端导航项目</title>
+    <style type="text/css">
+        .icon {
+            width: 1em;
+            height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+        }
+    </style>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header class="globalHeader">
+        <form class="searchForm" method="get" action="https://www.baidu.com/s">
+            <!--form表单发送请求实现点击搜索跳转到百度搜索问号之后是查询参数，看到路径为止-->
+            <input type="text" name="wd">
+            <button type="submit">搜索</button>
+        </form>
+    </header>
+    <main class="globalMain">
+        <ul class="siteList">
+            <!-- <li>
+                <a href="https://www.acfun.cn">
+                    <div class="site">
+                        <div class="logo">A</div>
+                        <div class="link">acfun.cn</div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="https://bilibili.com">
+                    <div class="site">
+                        <div class="logo">
+                            B
+                        </div>
+                        <div class="link">bilibili.com</div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <div class="site">
+                    <div class="logo">A</div>
+                    <div class="link">acfun.cn</div>
+                </div>
+            </li> -->
+
+            <li class="last">
+                <div class="addButton">
+                    <div class="icon-wrapper">
+                        <svg class="icon">
+                            <use xlink:href="#icon-add"></use>
+                        </svg>
+                    </div>
+                    <div class="text">新增网站</div>
+
+                </div>
+            </li>
+        </ul>
+    </main>
+    <script src="./iconfont.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
