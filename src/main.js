@@ -2,6 +2,7 @@ const $siteList = $(".siteList");
 const $lastLi = $siteList.find("li.last");
 const x = localStorage.getItem("x");
 const xObject = JSON.parse(x); //转化为对象
+const $input = $(".input");
 
 //声明hashMap并设置保底为后面读取localStorage的hashMap做准备
 const hashMap = xObject || [
@@ -80,4 +81,8 @@ $(document).on("keypress", (e) => {
       window.open(hashMap[i].url);
     }
   }
+});
+$input.on("keypress", (e) => {
+  console.log("运行"); //键盘事件在输入框中输入也会导致跳转，所以需要加入一个阻止冒泡的操作
+  e.stopPropagation();
 });
