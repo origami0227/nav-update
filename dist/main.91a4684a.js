@@ -172,4 +172,4 @@ $input.on("keypress", function (e) {
   e.stopPropagation();
 });
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.91a4684a.map
+//# sourceMappingURL=https://github.com/origami0227/nav-update/dist/main.91a4684a.map
