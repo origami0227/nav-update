@@ -9,7 +9,7 @@ ul,ol{list-style: none;}
 /* 站点样式 style*/
 body {
     background-color: #eeeeee;
-    background-image: url(./images/beijing2.jpg);
+    background-image: url(./images/sky.jpg);
     filter:opacity(90%);
     background-size:cover;
 

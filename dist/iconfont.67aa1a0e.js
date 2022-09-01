@@ -138,4 +138,4 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   });
 }(window);
 },{}]},{},["PCxj"], null)
-//# sourceMappingURL=https://github.com/origami0227/nav-update/dist/iconfont.67aa1a0e.map
+//# sourceMappingURL=iconfont.67aa1a0e.map
